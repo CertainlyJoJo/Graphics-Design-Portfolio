@@ -35,7 +35,7 @@ function Projects() {
               transition={{duration:0.75, ease: "easeOut", delay: index * 0.2}}
               className="h-fit w-10/12 sm:w-5/6 border-2 p-2 text-white shadow-[0px_10px_20px_rgba(0,0,0,0.8)]"
             >
-              <img src={`src/Projects Images/${project.img}`} alt={project.alt} />
+              <img src={`/Project Images/Projects Files/${project.img}`} alt={project.alt} />
               <span className="text-white justify-center border-t mt-2 flex">{project.title}</span>
             </motion.div>
           ))}

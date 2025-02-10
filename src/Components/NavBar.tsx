@@ -20,7 +20,7 @@ function NavBar() {
               </ul>
               <button 
                 onClick={() => setIsActive(!isActive)} 
-                className="block sm:hidden border border-transparent hover:border-white rounded-full p-1"><img src="src\assets\NavBar Items\menu.svg" alt="Menu" />
+                className="block sm:hidden border border-transparent hover:border-white rounded-full p-1"><img src="/Project Images/NavBar Items/menu.svg" alt="Menu" />
               </button>
             </nav>
 

@@ -77,7 +77,7 @@ function MainPage() {
                     initial={{opacity:0, x:100}}
                     animate={{opacity:0.62, x:0}}
                     transition={{duration:0.80, ease:"easeOut", delay:0.4}}
-                    className=" rounded-4xl opacity-62 w-4/12 sm:w-3/12 h-4/6 sm:h-5/6 mt-5 mb-5 ms-5 me-5 2xl:me-50 shadow-[-15px_15px_20px_rgba(0,0,0)] object-cover" src="src/assets/Grad.jpg" alt="Graduaton Pic"
+                    className=" rounded-4xl opacity-62 w-4/12 sm:w-3/12 h-4/6 sm:h-5/6 mt-5 mb-5 ms-5 me-5 2xl:me-50 shadow-[-15px_15px_20px_rgba(0,0,0)] object-cover" src="/Grad.jpg" alt="Graduaton Pic"
                 />
 
             </div>
