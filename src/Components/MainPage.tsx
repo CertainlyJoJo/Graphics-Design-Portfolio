@@ -25,6 +25,13 @@ function MainPage() {
         preloadImages(projectImages)
     }, [])
 
+    const scrollToBottom = () => {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        })
+    }
+
     return(
         <>
             <div className=" bg-[#494949]/32 flex justify-between h-120 xl:h-130 2xl:h-150 ms-6 me-6 mt-3 rounded-4xl shadow-[0px_10px_20px_rgba(0,0,0,0.8)] overflow-hidden">
@@ -61,14 +68,16 @@ function MainPage() {
                                 </motion.p>
                             </Link>
 
-                            <Link to={'about-me'}>
+                            <a 
+                                onClick={scrollToBottom}
+                                className="cursor-pointer">
                                 <motion.p
                                     initial={{opacity:0, y:50}}
                                     animate={{opacity:1, y:0}}
                                     transition={{duration:0.7, ease:'easeOut', delay:0.7}}
-                                    className="border border-white rounded-xl p-2 hover:scale-105 hover:shadow-[0px_10px_20px_rgba(0,0,0,0.8)]">About Me
+                                    className="border border-white rounded-xl p-2 hover:scale-105 hover:shadow-[0px_10px_20px_rgba(0,0,0,0.8)]">Contact Me
                                 </motion.p>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

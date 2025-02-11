@@ -7,6 +7,13 @@ function NavBar() {
 
   const [isActive, setIsActive] = useState(false)
 
+  const scrollToBottom = () => {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    })
+  }
+
   return (
     <>
         <div className="font-[Lexend]">
@@ -15,7 +22,7 @@ function NavBar() {
               <ul className="hidden sm:flex items-center justify-between sm:w-5/12 md:w-4/12 lg:w-3/10 xl:w-2/10 2xl:w-2/12 me-3">
                   <li className="hover:scale-105"><Link to={'/'}>Home</Link></li>
                   <li className="hover:scale-105"><Link to={'my-projects'}>Projects</Link></li>
-                  <li><Link className="p-2 rounded-xl text-black bg-white hover:text-white hover:bg-transparent border border-transparent hover:border-white" to={'about-me'}>About Me!</Link></li>
+                  <li onClick={scrollToBottom}><a className="cursor-pointer p-2 rounded-xl text-black bg-white hover:text-white hover:bg-transparent border border-transparent hover:border-white">Contact Me</a></li>
               </ul>
               <button 
                 onClick={() => setIsActive(!isActive)} 
@@ -30,10 +37,10 @@ function NavBar() {
                     initial={{opacity:0, x:150}}
                     animate={{opacity:1, x:0}}
                     exit={{opacity:0, x:150}}
-                    className={`bg-black/70 text-white text-center ${isActive ? "fixed" : "hidden"} sm:hidden p-5 z-50`}>
+                    className={`bg-black/75 text-white text-center ${isActive ? "fixed" : "hidden"} sm:hidden p-5 z-50`}>
                     <li className="hover:scale-105"><Link to={'/'}>Home</Link></li>
                     <li className="hover:scale-105"><Link to={'my-projects'}>Projects</Link></li>
-                    <li className="hover:scale-105"><Link to={'about-me'}>About Me</Link></li>
+                    <li onClick={scrollToBottom} className="hover:scale-105"><a className="cursor-pointer">Contact Me</a></li>
                   </motion.ul>
                 )}
               </AnimatePresence>
