@@ -12,11 +12,10 @@ function NavBar() {
         <div className="font-[Lexend]">
             <nav className="flex justify-between p-3 text-white mt-1">
               <h1 className="flex text-2xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl items-center ms-3"><Link to={'/'}>Graphics Design Portfolio</Link></h1>
-              <ul className="hidden sm:flex items-center justify-between sm:w-6/12 md:w-5/12 lg:w-4/12 xl:w-3/12 2xl:w-3/12 me-3">
+              <ul className="hidden sm:flex items-center justify-between sm:w-5/12 md:w-4/12 lg:w-3/10 xl:w-2/10 2xl:w-2/12 me-3">
                   <li className="hover:scale-105"><Link to={'/'}>Home</Link></li>
                   <li className="hover:scale-105"><Link to={'my-projects'}>Projects</Link></li>
-                  <li className="hover:scale-105"><a href="#">Contact</a></li>
-                  <li><a className="p-2 rounded-xl text-black bg-white hover:text-white hover:bg-transparent border border-transparent hover:border-white" href="#">About Me!</a></li>
+                  <li><Link className="p-2 rounded-xl text-black bg-white hover:text-white hover:bg-transparent border border-transparent hover:border-white" to={'about-me'}>About Me!</Link></li>
               </ul>
               <button 
                 onClick={() => setIsActive(!isActive)} 
@@ -34,8 +33,7 @@ function NavBar() {
                     className={`bg-black/70 text-white text-center ${isActive ? "fixed" : "hidden"} sm:hidden p-5 z-50`}>
                     <li className="hover:scale-105"><Link to={'/'}>Home</Link></li>
                     <li className="hover:scale-105"><Link to={'my-projects'}>Projects</Link></li>
-                    <li className="hover:scale-105"><a href="#">Contact</a></li>
-                    <li className="hover:scale-105"><a href="#">About Me</a></li>
+                    <li className="hover:scale-105"><Link to={'about-me'}>About Me</Link></li>
                   </motion.ul>
                 )}
               </AnimatePresence>

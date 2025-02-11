@@ -23,8 +23,15 @@ function Projects() {
 
   return (
     <>
-      <div className=" bg-[#494949]/32 pb-6 sm:pb-3 ms-6 me-6 mt-3 mb-5 rounded-4xl shadow-[0px_10px_20px_rgba(0,0,0,0.8)] font-[Lexend] overflow-hidden">
-        <h1 className="text-white text-lg sm:text-2xl 2xl:text-4xl text-center pt-6 px-2 mb-7">These are some projects I worked on for a few businesses...</h1>
+      <div className="bg-[#494949]/32 pb-6 sm:pb-3 ms-6 me-6 mt-3 mb-5 rounded-4xl shadow-[0px_10px_20px_rgba(0,0,0,0.8)] font-[Lexend] overflow-hidden">
+        <motion.h1 
+
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          transition={{duration:0.75, ease: "easeOut", delay: 0.2}}
+          className="text-white text-lg sm:text-2xl 2xl:text-4xl text-center pt-6 px-2 mb-7">
+          These are some projects I worked on for a few businesses...
+        </motion.h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-items-center gap-y-10">
           {projectData.map((project, index) =>(

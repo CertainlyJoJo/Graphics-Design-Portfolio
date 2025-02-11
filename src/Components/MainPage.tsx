@@ -4,12 +4,12 @@ import { Link } from "react-router-dom"
 import { useEffect } from "react"
 
 const projectImages: string[] = [
-    "src/Projects Images/SantaAd.jpeg",
-    "src/Projects Images/FuelCleaner-AD.jpg",
-    "src/Projects Images/IphoneAd.jpg",
-    "src/Projects Images/Galaxy-A55-5G Poster.jpg",
-    "src/Projects Images/SummerPrintPoster.jpeg",
-    "src/Projects Images/s22ad.jpg",
+    "/Project Images/Projects Files/SantaAd.jpeg",
+    "/Project Images/Projects Files/FuelCleaner-AD.jpg",
+    "/Project Images/Projects Files/IphoneAd.jpg",
+    "/Project Images/Projects Files/Galaxy-A55-5G Poster.jpg",
+    "/Project Images/Projects Files/SummerPrintPoster.jpeg",
+    "/Project Images/Projects Files/s22ad.jpg",
   ];
 
 const preloadImages = (images:string[]): void => {
@@ -57,16 +57,16 @@ function MainPage() {
                                     initial={{opacity:0, y:50}}
                                     animate={{opacity:1, y:0}}
                                     transition={{duration:0.7, ease:'easeOut', delay:0.5}}
-                                    className="text-black bg-white rounded-xl p-2 hover:scale-105 hover:shadow-[0px_10px_20px_rgba(0,0,0,0.8)]">My Work
+                                    className="text-white bg-blue-800 border rounded-xl p-2 hover:scale-105 hover:shadow-[0px_10px_20px_rgba(0,0,0,0.8)]">My Work
                                 </motion.p>
                             </Link>
 
-                            <Link to={''}>
+                            <Link to={'about-me'}>
                                 <motion.p
                                     initial={{opacity:0, y:50}}
                                     animate={{opacity:1, y:0}}
                                     transition={{duration:0.7, ease:'easeOut', delay:0.7}}
-                                    className="border border-white rounded-xl p-2 hover:scale-105 hover:shadow-[0px_10px_20px_rgba(0,0,0,0.8)]">Contact Me
+                                    className="border border-white rounded-xl p-2 hover:scale-105 hover:shadow-[0px_10px_20px_rgba(0,0,0,0.8)]">About Me
                                 </motion.p>
                             </Link>
                         </div>
@@ -82,9 +82,6 @@ function MainPage() {
 
             </div>
             
-            <div className='flex justify-end text-white text-xs me-5 mt-10 opacity-40'>
-                <p>*Yes I made this myself using React, Tailwind CSS and Framer Motion</p>
-            </div>
         </>
     )
 
