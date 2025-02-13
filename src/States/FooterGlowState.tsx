@@ -9,14 +9,16 @@ export const useFooterGlowStore = create<FooterGlowStore>((set) => ({
     triggerGlow : false,
 
     setGlow: () => {
-        set(() => ({
-            triggerGlow: true
-        }))
+        setTimeout(() => {
+            set(() => ({
+                triggerGlow: true
+            }))
+        }, 300)
         setTimeout(() => {
             set(() => ({
                 triggerGlow: false
             }))
-        }, 1000)
+        }, 3500)
     }
-    
+
 }))
