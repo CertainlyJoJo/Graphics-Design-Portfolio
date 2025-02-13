@@ -2,6 +2,7 @@ import "../App.css"
 import {motion} from "framer-motion"
 import { Link } from "react-router-dom"
 import { useEffect } from "react"
+import { useFooterGlowStore } from "../States/FooterGlowState";
 
 const projectImages: string[] = [
     "/Project Images/Projects Files/SantaAd.jpeg",
@@ -21,6 +22,8 @@ const preloadImages = (images:string[]): void => {
 
 function MainPage() {
 
+    const setGlow = useFooterGlowStore((state) => state.setGlow)
+
     useEffect(() =>{
         preloadImages(projectImages)
     }, [])
@@ -30,6 +33,7 @@ function MainPage() {
             top: document.body.scrollHeight,
             behavior: "smooth"
         })
+        setGlow()
     }
 
     return(

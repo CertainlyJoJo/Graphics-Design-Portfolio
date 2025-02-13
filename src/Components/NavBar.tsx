@@ -2,9 +2,11 @@ import { useState } from "react"
 import "../App.css"
 import { motion, AnimatePresence } from "framer-motion"
 import { Link } from "react-router-dom"
+import { useFooterGlowStore } from "../States/FooterGlowState"
 
 function NavBar() {
 
+  const setGlow = useFooterGlowStore((state) => state.setGlow)
   const [isActive, setIsActive] = useState(false)
 
   const scrollToBottom = () => {
@@ -12,6 +14,7 @@ function NavBar() {
         top: document.body.scrollHeight,
         behavior: "smooth"
     })
+    setGlow()
   }
 
   return (
@@ -38,9 +41,9 @@ function NavBar() {
                     animate={{opacity:1, x:0}}
                     exit={{opacity:0, x:150}}
                     className={`bg-black/75 text-white text-center ${isActive ? "fixed" : "hidden"} sm:hidden p-5 z-50`}>
-                    <li className="hover:scale-105"><Link to={'/'}>Home</Link></li>
-                    <li className="hover:scale-105"><Link to={'my-projects'}>Projects</Link></li>
-                    <li onClick={scrollToBottom} className="hover:scale-105"><a className="cursor-pointer">Contact Me</a></li>
+                    <li onClick={() => setIsActive(false)} className="hover:scale-105"><Link to={'/'}>Home</Link></li>
+                    <li onClick={() => setIsActive(false)} className="hover:scale-105"><Link to={'my-projects'}>Projects</Link></li>
+                    <li onClick={() => {scrollToBottom(); setIsActive(false)}} className="hover:scale-105"><a className="cursor-pointer">Contact Me</a></li>
                   </motion.ul>
                 )}
               </AnimatePresence>
