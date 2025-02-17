@@ -38,7 +38,7 @@ function MainPage() {
 
     return(
         <>
-            <div className=" bg-[#494949]/32 flex justify-between h-120 xl:h-130 2xl:h-150 ms-6 me-6 mt-3 rounded-4xl shadow-[0px_10px_20px_rgba(0,0,0,0.8)] overflow-hidden">
+            <div className=" bg-[radial-gradient(circle,_rgba(18,76,85,0.6)_0%,_rgba(203,69,84,0.1)_100%)] flex justify-between h-120 xl:h-130 2xl:h-150 ms-6 me-6 mt-3 rounded-4xl animate-[mainGlow_4s_ease-in-out_infinite] overflow-hidden z-[-10]">
                 <div className="flex-col ms-5 mt-5 2xl:ms-50 text-white font-[Lexend]">
                     <div className="pt-5">
                         <motion.p 
@@ -88,9 +88,9 @@ function MainPage() {
 
                 <motion.img
                     initial={{opacity:0, x:100}}
-                    animate={{opacity:0.62, x:0}}
+                    animate={{opacity:0.70, x:0}}
                     transition={{duration:0.80, ease:"easeOut", delay:0.4}}
-                    className=" rounded-4xl opacity-62 w-4/12 sm:w-3/12 h-4/6 sm:h-5/6 mt-5 mb-5 ms-5 me-5 2xl:me-50 shadow-[-15px_15px_20px_rgba(0,0,0)] object-cover" src="/Grad.jpg" alt="Graduaton Pic"
+                    className=" rounded-4xl w-4/12 sm:w-3/12 h-4/6 sm:h-5/6 mt-5 mb-5 ms-5 me-5 2xl:me-50 shadow-[-15px_15px_20px_rgba(0,0,0)] object-cover" src="/Grad.jpg" alt="Graduaton Pic"
                 />
 
             </div>

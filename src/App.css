@@ -12,3 +12,13 @@ body{
         box-shadow: 0px 0px 30px 10px rgba(255, 255, 255, 0.8);
     }
 }
+
+@keyframes mainGlow{
+    0%, 100% {
+        box-shadow: 0px 5px 50px 5px rgba(0,0,0,0.8);
+    }
+    50% {
+        box-shadow: 0px 0px 60px 10px rgba(184,163,247,0.4);
+    }
+
+}

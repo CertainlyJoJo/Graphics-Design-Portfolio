@@ -7,7 +7,7 @@ function Footer() {
 
     return (
       <>
-          <div className={`bg-[#494949]/15 rounded-4xl mx-5 my-5 py-5 ] font-[Lexend] ${triggerGlow ? "animate-[breathing_2s_ease-in-out]": ""} shadow-[0px_10px_20px_rgba(0,0,0,0.8)]`}>
+          <div className={`bg-zinc-600/30 rounded-4xl mx-7 my-5 py-5 font-[Lexend] ${triggerGlow ? "animate-[breathing_2s_ease-in-out]": ""} shadow-[0px_10px_20px_rgba(0,0,0,0.8)]`}>
               <div className="gap-2 grid grid-cols-1 sm:grid-cols-2 text-white justify-items-center">
                   <div className="flex items-center space-x-3 md:ms-40 lg:ms-60 xl:ms-80 2xl:ms-100">
                       <span className="text-xl"><img src="/phone1.svg" alt="Phone" /></span>

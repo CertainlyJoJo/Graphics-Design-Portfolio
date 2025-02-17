@@ -20,7 +20,7 @@ function NavBar() {
   return (
     <>
         <div className="font-[Lexend]">
-            <nav className="flex justify-between p-3 text-white mt-1">
+            <nav className="flex justify-between p-3 text-white my-2">
               <h1 className="flex text-2xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl items-center ms-3"><Link to={'/'}>Graphics Design Portfolio</Link></h1>
               <ul className="hidden sm:flex items-center justify-between sm:w-5/12 md:w-4/12 lg:w-3/10 xl:w-2/10 2xl:w-2/12 me-3">
                   <li className="hover:scale-105"><Link to={'/'}>Home</Link></li>
