@@ -42,8 +42,8 @@ function MainPage() {
                 <div className="flex-col ms-5 mt-5 2xl:ms-50 text-white font-[Lexend]">
                     <div className="pt-5">
                         <motion.p 
-                            initial={{opacity:0, x:-100}}
-                            animate={{opacity:1, x:0}}
+                            initial={{opacity:0, x:-100, filter: "blur(10px)"}}
+                            animate={{opacity:1, x:0, filter: "blur(0px)"}}
                             transition={{duration: 0.75, ease: "easeOut", delay:0.2}}
                             className="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                             Hello, <span className="bg-linear-to-b from-[#af2f2f] via-[#9946bc] to-[#914eef] bg-clip-text text-transparent ">I'm Joseph</span>.<br/>
@@ -65,8 +65,8 @@ function MainPage() {
                         <div className="flex mt-10 w-45 sm:w-52 justify-between text-sm sm:text-base">
                             <Link to={'my-projects'}>
                                 <motion.p
-                                    initial={{opacity:0, y:50}}
-                                    animate={{opacity:1, y:0}}
+                                    initial={{opacity:0, y:50, filter: "blur(10px)"}}
+                                    animate={{opacity:1, y:0, filter: "blur(0px)"}}
                                     transition={{duration:0.7, ease:'easeOut', delay:0.5}}
                                     className="text-white bg-blue-800 border rounded-xl p-2 hover:scale-105 hover:shadow-[0px_10px_20px_rgba(0,0,0,0.8)]">My Work
                                 </motion.p>
@@ -76,8 +76,8 @@ function MainPage() {
                                 onClick={scrollToBottom}
                                 className="cursor-pointer">
                                 <motion.button
-                                    initial={{opacity:0, y:50}}
-                                    animate={{opacity:1, y:0}}
+                                    initial={{opacity:0, y:50, filter: "blur(10px)"}}
+                                    animate={{opacity:1, y:0, filter: "blur(0px)"}}
                                     transition={{duration:0.7, ease:'easeOut', delay:0.7}}
                                     className="border border-white rounded-xl p-2 hover:scale-105 hover:shadow-[0px_10px_20px_rgba(0,0,0,0.8)]">Contact Me
                                 </motion.button>
@@ -87,8 +87,8 @@ function MainPage() {
                 </div>
 
                 <motion.img
-                    initial={{opacity:0, x:100}}
-                    animate={{opacity:0.70, x:0}}
+                    initial={{opacity:0, x:100, filter: "blur(10px)"}}
+                    animate={{opacity:0.70, x:0, filter: "blur(0px)"}}
                     transition={{duration:0.80, ease:"easeOut", delay:0.4}}
                     className=" rounded-4xl w-4/12 sm:w-3/12 h-4/6 sm:h-5/6 mt-5 mb-5 ms-5 me-5 2xl:me-50 shadow-[-15px_15px_20px_rgba(0,0,0)] object-cover" src="/Grad.jpg" alt="Graduaton Pic"
                 />

@@ -3,12 +3,12 @@ import "../App.css";
 import {motion} from 'framer-motion'
 
 const projectData = [
-  { img: "SantaAd.jpeg", alt: "Santa Ad", title: "Meet & Greet Santa Ad", animation: {y: -100} },
-  { img: "FuelCleaner-AD.jpg", alt: "Fuel Cleaner Ad", title: "Motorcycle Fuel Cleaner Ad", animation: {y: -100} },
-  { img: "IphoneAd.jpg", alt: "iPhone 12 Ad", title: "iPhone 12 Ad", animation: {y: -100} },
-  { img: "Galaxy-A55-5G Poster.jpg", alt: "A55-5G Ad", title: "Samsung Galaxy A55-5G Ad", animation: {y: -100} },
-  { img: "SummerPrintPoster.jpeg", alt: "Summer Prints Ad", title: "Summer Photos Print Service Ad", animation: {y: -100} },
-  { img: "s22ad.jpg", alt: "S22 Ad", title: "Samsung Galaxy S22 Ad", animation: {y: -100} },
+  { img: "SantaAd.jpeg", alt: "Santa Ad", title: "Meet & Greet Santa Ad", animation: {y: -100, filter: "blur(10px)"} },
+  { img: "FuelCleaner-AD.jpg", alt: "Fuel Cleaner Ad", title: "Motorcycle Fuel Cleaner Ad", animation: {y: -100, filter: "blur(10px)"} },
+  { img: "IphoneAd.jpg", alt: "iPhone 12 Ad", title: "iPhone 12 Ad", animation: {y: -100, filter: "blur(10px)"} },
+  { img: "Galaxy-A55-5G Poster.jpg", alt: "A55-5G Ad", title: "Samsung Galaxy A55-5G Ad", animation: {y: -100, filter: "blur(10px)"} },
+  { img: "SummerPrintPoster.jpeg", alt: "Summer Prints Ad", title: "Summer Photos Print Service Ad", animation: {y: -100, filter: "blur(10px)"} },
+  { img: "s22ad.jpg", alt: "S22 Ad", title: "Samsung Galaxy S22 Ad", animation: {y: -100, filter: "blur(10px)"} },
 ];
 
 function Projects() {
@@ -38,7 +38,7 @@ function Projects() {
             <motion.div
               key={index}
               initial={{opacity:0, ...project.animation}}
-              animate={{opacity:1, x:0, y:0}}
+              animate={{opacity:1, x:0, y:0, filter: "blur(0px)"}}
               transition={{duration:0.75, ease: "easeOut", delay: index * 0.2}}
               className="h-fit w-10/12 sm:w-5/6 border-2 p-2 text-white shadow-[0px_10px_20px_rgba(0,0,0,0.8)]"
             >
