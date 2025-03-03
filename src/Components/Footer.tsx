@@ -11,11 +11,11 @@ function Footer() {
               <div className="gap-2 grid grid-cols-1 sm:grid-cols-2 text-white justify-items-center">
                   <div className="flex items-center space-x-3 md:ms-40 lg:ms-60 xl:ms-80 2xl:ms-100">
                       <span className="text-xl"><img src="/phone1.svg" alt="Phone" /></span>
-                      <a className="hover:text-blue-400" href="tel:+5926746188">(592) 674-6188</a>
+                      <a className="hover:text-blue-400 hover:underline" href="tel:+5926746188">(592) 674-6188</a>
                   </div>
                   <div className="flex items-center space-x-3 md:me-40 lg:me-60 xl:me-80 2xl:me-100">
                       <span className="text-xl"><img src="/mail.svg" alt="Email" /></span>
-                      <a className="hover:text-blue-400" href="mailto:jramdeholl1@gmail.com">jramdeholl1@gmail.com</a>
+                      <a className="hover:text-blue-400 hover:underline" href="mailto:jramdeholl1@gmail.com">jramdeholl1@gmail.com</a>
                   </div>
               </div>
               <div className='text-white place-self-center my-3'>
