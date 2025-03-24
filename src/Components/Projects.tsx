@@ -7,8 +7,9 @@ const projectData = [
   { img: "FuelCleaner-AD.jpg", alt: "Fuel Cleaner Ad", title: "Motorcycle Fuel Cleaner Ad", animation: {y: -100, filter: "blur(10px)"} },
   { img: "IphoneAd.jpg", alt: "iPhone 12 Ad", title: "iPhone 12 Ad", animation: {y: -100, filter: "blur(10px)"} },
   { img: "Galaxy-A55-5G Poster.jpg", alt: "A55-5G Ad", title: "Samsung Galaxy A55-5G Ad", animation: {y: -100, filter: "blur(10px)"} },
-  { img: "SummerPrintPoster.jpeg", alt: "Summer Prints Ad", title: "Summer Photos Print Service Ad", animation: {y: -100, filter: "blur(10px)"} },
+  { img: "GPU.jpg", alt: "RX 5600XT Ad", title: "Gigabyte RX 5600XT Ad", animation: {y: -100, filter: "blur(10px)"} },
   { img: "s22ad.jpg", alt: "S22 Ad", title: "Samsung Galaxy S22 Ad", animation: {y: -100, filter: "blur(10px)"} },
+  { img: "SummerPrintPoster.jpeg", alt: "Summer Prints Ad", title: "Summer Photos Print Service Ad", animation: {y: -100, filter: "blur(10px)"} },
 ];
 
 function Projects() {
